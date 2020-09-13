@@ -1,0 +1,19 @@
+current directory: /Users/akitoshi/workspace/book_management/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.3/ext/byebug
+/Users/akitoshi/.rbenv/versions/2.5.3/bin/ruby -r ./siteconf20200913-3048-7jppvm.rb extconf.rb
+creating Makefile
+
+current directory: /Users/akitoshi/workspace/book_management/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" clean
+
+current directory: /Users/akitoshi/workspace/book_management/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR="
+compiling breakpoint.c
+compiling byebug.c
+compiling context.c
+compiling locker.c
+compiling threads.c
+linking shared-object byebug/byebug.bundle
+
+current directory: /Users/akitoshi/workspace/book_management/vendor/bundle/ruby/2.5.0/gems/byebug-11.1.3/ext/byebug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 byebug.bundle ./.gem.20200913-3048-xln3o1/byebug
