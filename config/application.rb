@@ -12,7 +12,7 @@ module BookManagement
     config.load_defaults 6.0
 
     config.generators do |g|
-      g.test false
+      g.test_framework false
       g.helper false
       g.assets false
     end
