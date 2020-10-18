@@ -1,24 +1,38 @@
-# README
+# サービス名
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+「ぶくまね」
 
-Things you may want to cover:
+# サービス概要
 
-* Ruby version
+今の生活を良くしたいけどどうしたら良いのか悩んでいる人が、
+本を読むことで仕事やプライベートが良くなることを実感でき、
+生活をより良くすることができる読書記録アプリ
 
-* System dependencies
+# 登場人物
+- 普段読書をする習慣がない人
+- 読書をしようと思ってはいるけど、何を選んだら良いか、どのように読めば良いか迷っている人
 
-* Configuration
+# ユーザーが抱える課題
+- 本を読む習慣がない
+- どうしたら今の生活が良くなるかの手段がわからない
+- 勉強したいが何をしたら良いかわからない
+- 本を読んだとしても生活が改善しない
+- 本を読む意味がわからない
+- 本を読んでいるけど、何をどれくらい読んだのかが把握できない
+- これからどんなジャンルの本を読んでいこうか悩んでいる
 
-* Database creation
+# 解決方法
+- 本を読むとどんな良いことがあるかを知れる
+- 本を読むことで生きやすくなることを体験して欲しい
+- 本を読みたくなるようなアプリにする
+- 今まで読んだ本の管理ができる
+- 読んだ本は全てアウトプットすることにより、知識が身に付く
+- SNSにシェアすることで繋がりができる
+- 今まで買った本の総額を把握することができる
 
-* Database initialization
+# マーケット
+- 10~30代の本をあまり読まない人
+- 学生、社会人
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# 画面遷移図
+作成中
