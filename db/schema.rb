@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_09_13_135612) do
+ActiveRecord::Schema.define(version: 2020_10_18_051945) do
 
   create_table "authors", force: :cascade do |t|
     t.string "name"
@@ -47,6 +47,16 @@ ActiveRecord::Schema.define(version: 2020_09_13_135612) do
     t.string "memo"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", null: false
+    t.string "crypted_password"
+    t.string "salt"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "name"
+    t.index ["email"], name: "index_users_on_email", unique: true
   end
 
   add_foreign_key "book_authors", "authors"
