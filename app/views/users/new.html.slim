@@ -1,0 +1,19 @@
+h1 Users#new
+= form_for(@user) do |f|
+  div
+    = f.label 'ファーストネーム'
+    = f.text_field :first_name
+  div
+    = f.label 'ラストネーム'
+    = f.text_field :last_name
+  div
+    = f.label 'メールアドレス'
+    = f.text_field :email
+  div
+    = f.label 'パスワード'
+    = f.password_field :password
+  div
+    = f.label 'パスワード確認用'
+    = f.password_field :password_confirmation
+  div
+    = f.submit '登録'

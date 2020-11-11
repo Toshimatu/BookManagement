@@ -1,0 +1,50 @@
+/ タイトル
+.top-wrapper.text-center
+  tcontainer.top-container
+    .row
+      .col-md-6.col-md-offset-3
+        .title
+          h1.text-shadow
+            | ぶくまね
+      .col-md-8.col-md-offset-2
+        p.text-shadow.sub-title
+          | あなたの生活をより良くするための読書体験アプリです。
+      .col-md-6.col-md-offset-3
+        / = link_to "アカウント登録", '/users/new',  class: 'btn btn-arrange btn-block btn-red'
+        / = link_to "ログイン", 'sessions/new',      class: 'btn btn-arrange btn-block btn-red'
+        p.text-general
+          | テストログインはこちらから
+	      / = render 'shared/guest_login'
+
+/ サービス紹介
+.service-introduction
+  .service-title.text-center
+    h1.title
+      | ぶくまねとは
+  .service-all-item
+    .item
+      .fas.fa-comments
+  		  p.explanation
+          | ①サービス説明
+
+    .item
+      .fas.fa-comments
+        p.explanation
+          | ②サービス説明
+
+    .item
+      .fas.fa-comments
+        p.explanation
+          | ③サービス説明
+
+  .container
+    .row
+      .col-md-3
+      	.text-center
+      	  = link_to('新規ユーザー登録', new_user_path)
+      .col-md-3
+      	.text-center
+      	  = link_to('ログインはこちらから', login_path)
+      .col-md-3
+      	.text-center
+      	  = link_to('ログアウト', logout_path, method: :delete)
