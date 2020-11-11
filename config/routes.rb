@@ -1,10 +1,9 @@
 Rails.application.routes.draw do
-  root to: 'static_page#index'
+  root 'static_page#index'
+  get 'login', to: 'user_sessions#new', as: :login
+  post 'login', to: 'user_sessions#create'
+  delete 'logout', to: 'user_sessions#destroy', as: :logout
 
-  get    '/welcome', to: "sessions#new",     as: :welcome
-  post   '/login',   to: "sessions#create",  as: :login
-  delete '/logout',  to: "sessions#destroy", as: :logout
-  resources :users, only: %i[new, create]
-
+  resources :users, only: %i[new create]
   resources :books
 end

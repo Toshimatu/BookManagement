@@ -39,7 +39,12 @@
 
   .container
     .row
-      .col-md-6.col-md-offset-3
+      .col-md-3
       	.text-center
-          | ログアウト
-      	  = link_to('Logout', logout_path, method: :delete)
+      	  = link_to('新規ユーザー登録', new_user_path)
+      .col-md-3
+      	.text-center
+      	  = link_to('ログインはこちらから', login_path)
+      .col-md-3
+      	.text-center
+      	  = link_to('ログアウト', logout_path, method: :delete)

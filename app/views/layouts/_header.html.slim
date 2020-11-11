@@ -1,0 +1,15 @@
+.header
+  = link_to root_path do
+    span
+      = image_tag "bukumane_logo.png", alt: 'ぶくまね'
+
+    / - if logged_in?
+      ul
+        li
+          = link_to root_path do
+            span
+              | 本棚
+        li
+          = link_to root_path do
+            span
+              | ユーザー
